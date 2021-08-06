@@ -30,3 +30,6 @@ jobs:
         if: env.YOUTH_HEADER
         run: |
           node youth.js
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
