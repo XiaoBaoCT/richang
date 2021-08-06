@@ -27,3 +27,7 @@ jobs:
       - name: '运行 【中青浏览赚&看看赚】'
         run: |
           node youth_gain.js
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+      
